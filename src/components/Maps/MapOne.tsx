@@ -2,13 +2,17 @@
 import jsVectorMap from "jsvectormap";
 import "jsvectormap/dist/jsvectormap.css";
 import React, { useEffect } from "react";
-import "../../js/us-aea-en";
+import "jsvectormap/dist/maps/brasil.js";
 
-const MapOne: React.FC = () => {
+interface MapOneProps {
+  onRegionClick: (region: string) => void;
+}
+
+const MapOne: React.FC<MapOneProps> = ({ onRegionClick }) => {
   useEffect(() => {
     const mapOne = new jsVectorMap({
       selector: "#mapOne",
-      map: "us_aea_en",
+      map: "brasil",
       zoomButtons: true,
 
       regionStyle: {
@@ -38,6 +42,10 @@ const MapOne: React.FC = () => {
           },
         },
       },
+      
+      onRegionClick: (event: any, code: string) => {
+        onRegionClick(code); // Pass the selected region code to the parent component
+      },
     });
 
     return () => {
@@ -45,14 +53,13 @@ const MapOne: React.FC = () => {
       if (map) {
         map.innerHTML = "";
       }
-      // mapOne.destroy();
     };
-  }, []);
+  }, [onRegionClick]);
 
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-7">
       <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
-        Region labels
+        Regiões
       </h4>
       <div className="h-90">
         <div id="mapOne" className="mapOne map-btn"></div>
