@@ -2,7 +2,7 @@
 import jsVectorMap from "jsvectormap";
 import "jsvectormap/dist/jsvectormap.css";
 import React, { useEffect } from "react";
-import "jsvectormap/dist/maps/brasil.js";
+import "/public/map/brasil.js";
 
 interface MapOneProps {
   onRegionClick: (region: string) => void;

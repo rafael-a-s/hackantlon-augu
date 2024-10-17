@@ -14,13 +14,12 @@
       "atividadePrincipal": "Comerciante",
       "endereco": "Rua das Flores, 123, São Paulo, SP",
       "doenca": {
-        "doenca": "Malária",
+        "doenca": "Chikungunya",
         "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
         "solicitacaoExame": "sim",
         "dataSolicitacao": "2024-10-01",
         "exameSolicitado": "Exame de Gota Espessa",
         "dataProvavelExame": "2024-10-05",
-        "resultado": "positivo",
         "nomeExaminador": "Carlos Almeida",
         "nomeMedico": "Dr. Fernando Souza",
         "crmMedico": "CRM-SP 123456",
@@ -132,6 +131,22 @@
         "tipoMaterial": "Sangue Venoso"
       },
       "id": 6
+    },
+    {
+      "nomeCompleto": "João da Silva",
+      "nomeResponsavel": "Maria Oliveira",
+      "ddd": "11",
+      "telefone": "987654321",
+      "idade": "35",
+      "sexo": "M",
+      "gestante": "não",
+      "escolaridade": "Ensino Superior Completo",
+      "racaCor": "Parda",
+      "nomeMae": "Ana da Silva",
+      "atividadePrincipal": "Comerciante",
+      "endereco": "Rua das Flores, 123, Tocantins, TO",
+      "doenca": "",
+      "id": 7
     }
   ]
 }
