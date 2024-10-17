@@ -2,6 +2,7 @@
 'use client';
 
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Page({params} : {params: {id: number}}) {
@@ -11,6 +12,7 @@ export default function Page({params} : {params: {id: number}}) {
     
 
     const [paciente, setPaciente] = useState<any>(null);
+    const router = useRouter();
 
     // Buscar o paciente ao montar o componente
     useEffect(() => {
@@ -47,6 +49,7 @@ export default function Page({params} : {params: {id: number}}) {
         // Monta o objeto atualizado com a agregação dos dados do formulário
         const pacienteAtualizado = {
             ...paciente,
+            status: "finalizado",
             doenca: {
                 ...paciente.doenca,
                 resultado: formData.resultado
@@ -63,10 +66,13 @@ export default function Page({params} : {params: {id: number}}) {
             });
 
             if (resposta.ok) {
-                alert('Caso registrado com sucesso!');
                 setFormData({
                     resultado: "",
                 });
+
+                const data = await resposta.json();
+
+                router.push('/investigacao-status/'+data.id);
             } else {
                 alert('Erro ao registrar o caso.');
             }

@@ -12,9 +12,10 @@
       "racaCor": "Parda",
       "nomeMae": "Ana da Silva",
       "atividadePrincipal": "Comerciante",
-      "endereco": "Rua das Flores, 123, São Paulo, SP",
+      "status": "finalizado",
+      "endereco": "Rua das Flores, 123, Tocantins, TO",
       "doenca": {
-        "doenca": "Chikungunya",
+        "doenca": "Malária",
         "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
         "solicitacaoExame": "sim",
         "dataSolicitacao": "2024-10-01",
@@ -23,7 +24,8 @@
         "nomeExaminador": "Carlos Almeida",
         "nomeMedico": "Dr. Fernando Souza",
         "crmMedico": "CRM-SP 123456",
-        "tipoMaterial": "Sangue Venoso"
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "positivo"
       },
       "id": 1
     },
@@ -39,7 +41,8 @@
       "racaCor": "Parda",
       "nomeMae": "Ana da Silva",
       "atividadePrincipal": "Comerciante",
-      "endereco": "Rua das Flores, 123, São Paulo, SP",
+      "status": "finalizado",
+      "endereco": "Rua das Flores, 123, Tocantins, TO",
       "doenca": {
         "doenca": "Malária",
         "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
@@ -51,7 +54,7 @@
         "nomeMedico": "Dr. Fernando Souza",
         "crmMedico": "CRM-SP 123456",
         "tipoMaterial": "Sangue Venoso",
-        "result": "positivo"
+        "resultado": "negativo"
       },
       "id": 2
     },
@@ -67,8 +70,21 @@
       "racaCor": "Parda",
       "nomeMae": "Ana da Silva",
       "atividadePrincipal": "Comerciante",
-      "endereco": "Rua das Flores, 123, São Paulo, SP",
-      "doenca": "",
+      "status": "finalizado",
+      "endereco": "Rua das Flores, 123, Tocantins, TO",
+      "doenca": {
+        "doenca": "Dengue",
+        "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
+        "solicitacaoExame": "sim",
+        "dataSolicitacao": "2024-10-01",
+        "exameSolicitado": "Exame de Gota Espessa",
+        "dataProvavelExame": "2024-10-05",
+        "nomeExaminador": "Carlos Almeida",
+        "nomeMedico": "Dr. Fernando Souza",
+        "crmMedico": "CRM-SP 123456",
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "positivo"
+      },
       "id": 3
     },
     {
@@ -83,8 +99,21 @@
       "racaCor": "Parda",
       "nomeMae": "Ana da Silva",
       "atividadePrincipal": "Comerciante",
+      "status": "finalizado",
       "endereco": "Rua das Flores, 123, Tocantins, TO",
-      "doenca": "",
+      "doenca": {
+        "doenca": "Malária",
+        "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
+        "solicitacaoExame": "sim",
+        "dataSolicitacao": "2024-10-01",
+        "exameSolicitado": "Exame de Gota Espessa",
+        "dataProvavelExame": "2024-10-05",
+        "nomeExaminador": "Carlos Almeida",
+        "nomeMedico": "Dr. Fernando Souza",
+        "crmMedico": "CRM-SP 123456",
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "positivo"
+      },
       "id": 4
     },
     {
@@ -99,9 +128,20 @@
       "racaCor": "Parda",
       "nomeMae": "Ana da Silva",
       "atividadePrincipal": "Comerciante",
+      "status": "finalizado",
       "endereco": "Rua das Flores, 123, Tocantins, TO",
       "doenca": {
-        "result": "negativo"
+        "doenca": "Malária",
+        "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
+        "solicitacaoExame": "sim",
+        "dataSolicitacao": "2024-10-01",
+        "exameSolicitado": "Exame de Gota Espessa",
+        "dataProvavelExame": "2024-10-05",
+        "nomeExaminador": "Carlos Almeida",
+        "nomeMedico": "Dr. Fernando Souza",
+        "crmMedico": "CRM-SP 123456",
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "negativo"
       },
       "id": 5
     },
@@ -117,6 +157,7 @@
       "racaCor": "Parda",
       "nomeMae": "Ana da Silva",
       "atividadePrincipal": "Comerciante",
+      "status": "finalizado",
       "endereco": "Rua das Flores, 123, Tocantins, TO",
       "doenca": {
         "doenca": "Malária",
@@ -128,7 +169,8 @@
         "nomeExaminador": "Carlos Almeida",
         "nomeMedico": "Dr. Fernando Souza",
         "crmMedico": "CRM-SP 123456",
-        "tipoMaterial": "Sangue Venoso"
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "positivo"
       },
       "id": 6
     },
@@ -144,9 +186,66 @@
       "racaCor": "Parda",
       "nomeMae": "Ana da Silva",
       "atividadePrincipal": "Comerciante",
+      "status": "consultado",
+      "endereco": "Rua das Flores, 123, Tocantins, TO",
+      "doenca": {
+        "doenca": "Malária",
+        "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
+        "solicitacaoExame": "sim",
+        "dataSolicitacao": "2024-10-01",
+        "exameSolicitado": "Exame de Gota Espessa",
+        "dataProvavelExame": "2024-10-05",
+        "nomeExaminador": "Carlos Almeida",
+        "nomeMedico": "Dr. Fernando Souza",
+        "crmMedico": "CRM-SP 123456",
+        "tipoMaterial": "Sangue Venoso"
+      },
+      "id": 7
+    },
+    {
+      "nomeCompleto": "João da Silva",
+      "nomeResponsavel": "Maria Oliveira",
+      "ddd": "11",
+      "telefone": "987654321",
+      "idade": "35",
+      "sexo": "M",
+      "gestante": "não",
+      "escolaridade": "Ensino Superior Completo",
+      "racaCor": "Parda",
+      "nomeMae": "Ana da Silva",
+      "atividadePrincipal": "Comerciante",
+      "status": "consultado",
+      "endereco": "Rua das Flores, 123, Tocantins, TO",
+      "doenca": {
+        "doenca": "Malária",
+        "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
+        "solicitacaoExame": "sim",
+        "dataSolicitacao": "2024-10-01",
+        "exameSolicitado": "Exame de Gota Espessa",
+        "dataProvavelExame": "2024-10-05",
+        "nomeExaminador": "Carlos Almeida",
+        "nomeMedico": "Dr. Fernando Souza",
+        "crmMedico": "CRM-SP 123456",
+        "tipoMaterial": "Sangue Venoso"
+      },
+      "id": 8
+    },
+    {
+      "nomeCompleto": "João da Silva",
+      "nomeResponsavel": "Maria Oliveira",
+      "ddd": "11",
+      "telefone": "987654321",
+      "idade": "35",
+      "sexo": "M",
+      "gestante": "não",
+      "escolaridade": "Ensino Superior Completo",
+      "racaCor": "Parda",
+      "nomeMae": "Ana da Silva",
+      "atividadePrincipal": "Comerciante",
+      "status": "triagem",
       "endereco": "Rua das Flores, 123, Tocantins, TO",
       "doenca": "",
-      "id": 7
+      "id": 9
     }
   ]
 }
