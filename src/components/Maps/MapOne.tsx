@@ -14,7 +14,7 @@ const MapOne: React.FC<MapOneProps> = ({ onRegionClick }) => {
       selector: "#mapOne",
       map: "brasil",
       zoomButtons: true,
-
+      selectedRegions: ["BR-TO"], // Destaque inicial para Tocantins
       regionStyle: {
         initial: {
           fill: "#C8D0D8",
@@ -22,6 +22,9 @@ const MapOne: React.FC<MapOneProps> = ({ onRegionClick }) => {
         hover: {
           fillOpacity: 1,
           fill: "#3056D3",
+        },
+        selected: {
+          fill: "#3056D3", // Cor quando a região está selecionada
         },
       },
       regionLabelStyle: {
@@ -34,7 +37,6 @@ const MapOne: React.FC<MapOneProps> = ({ onRegionClick }) => {
           cursor: "pointer",
         },
       },
-
       labels: {
         regions: {
           render(code: string) {
@@ -42,9 +44,20 @@ const MapOne: React.FC<MapOneProps> = ({ onRegionClick }) => {
           },
         },
       },
-      
       onRegionClick: (event: any, code: string) => {
-        onRegionClick(code); // Pass the selected region code to the parent component
+        const selectedRegions = mapOne.getSelectedRegions(); // Obtém as regiões selecionadas atualmente
+
+        if (code === "BR-TO") {
+          // Se Tocantins for clicado novamente, mantém a seleção
+          mapOne.clearSelectedRegions();
+          mapOne.setSelectedRegions(["BR-TO"]);
+        } else {
+          // Desmarca Tocantins se outro estado for selecionado
+          mapOne.clearSelectedRegions(); // Limpa as regiões selecionadas
+          mapOne.setSelectedRegions([code]); // Define a nova seleção
+        }
+
+        onRegionClick(code); // Passa o código da região selecionada para o componente pai
       },
     });
 

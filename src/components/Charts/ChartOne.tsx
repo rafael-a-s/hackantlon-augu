@@ -122,7 +122,7 @@ const ChartOne: React.FC = () => {
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 w-full">
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:gap-5">
-          {["dengue", "zika", "tuberculosis", "malaria"].map((disease) => (
+          {["dengue", "zika", "turbeculose", "malaria"].map((disease) => (
             <label key={disease} className="flex items-center space-x-2">
               <input
                 type="checkbox"
