@@ -20,6 +20,7 @@ export default function Page() {
         racaCor: "Parda",
         nomeMae: "Ana da Silva",
         atividadePrincipal: "Comerciante",
+        status: "triagem",
         endereco: "Rua das Flores, 123, Tocantins, TO"
     });
     
@@ -47,7 +48,11 @@ export default function Page() {
             });
 
             if (resposta.ok) {
-                alert('Paciente registrado com sucesso!');
+               
+                setSelectedDisease("");
+                const data = await resposta.json();
+                router.push('/atendimento/triagem/sucess/'+data.id);                
+
                 setFormData({
                     nomeCompleto: "",
                     nomeResponsavel: "",
@@ -60,11 +65,10 @@ export default function Page() {
                     racaCor: "",
                     nomeMae: "",
                     atividadePrincipal: "",
+                    status: "triagem",
                     endereco: ""
                 });
-                setSelectedDisease("");
-                const data = await resposta.json();
-                router.push("/enfermeiro/cadastro-doenca/" + data.id);
+                
             } else {
                 alert('Erro ao registrar paciente.');
             }
