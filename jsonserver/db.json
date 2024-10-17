@@ -186,7 +186,7 @@
       "racaCor": "Parda",
       "nomeMae": "Ana da Silva",
       "atividadePrincipal": "Comerciante",
-      "status": "consultado",
+      "status": "finalizado",
       "endereco": "Rua das Flores, 123, Tocantins, TO",
       "doenca": {
         "doenca": "Malária",
@@ -198,7 +198,8 @@
         "nomeExaminador": "Carlos Almeida",
         "nomeMedico": "Dr. Fernando Souza",
         "crmMedico": "CRM-SP 123456",
-        "tipoMaterial": "Sangue Venoso"
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "positivo"
       },
       "id": 7
     },
@@ -214,7 +215,7 @@
       "racaCor": "Parda",
       "nomeMae": "Ana da Silva",
       "atividadePrincipal": "Comerciante",
-      "status": "consultado",
+      "status": "finalizado",
       "endereco": "Rua das Flores, 123, Tocantins, TO",
       "doenca": {
         "doenca": "Malária",
@@ -226,9 +227,97 @@
         "nomeExaminador": "Carlos Almeida",
         "nomeMedico": "Dr. Fernando Souza",
         "crmMedico": "CRM-SP 123456",
-        "tipoMaterial": "Sangue Venoso"
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "positivo"
       },
       "id": 8
+    },
+    {
+      "nomeCompleto": "João da Silva",
+      "nomeResponsavel": "Maria Oliveira",
+      "ddd": "11",
+      "telefone": "987654321",
+      "idade": "35",
+      "sexo": "M",
+      "gestante": "não",
+      "escolaridade": "Ensino Superior Completo",
+      "racaCor": "Parda",
+      "nomeMae": "Ana da Silva",
+      "atividadePrincipal": "Comerciante",
+      "status": "finalizado",
+      "endereco": "Rua das Flores, 123, Tocantins, TO",
+      "doenca": {
+        "doenca": "Chikungunya",
+        "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
+        "solicitacaoExame": "sim",
+        "dataSolicitacao": "2024-10-01",
+        "exameSolicitado": "Exame de Gota Espessa",
+        "dataProvavelExame": "2024-10-05",
+        "nomeExaminador": "Carlos Almeida",
+        "nomeMedico": "Dr. Fernando Souza",
+        "crmMedico": "CRM-SP 123456",
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "positivo"
+      },
+      "id": 9
+    },
+    {
+      "nomeCompleto": "João da Silva",
+      "nomeResponsavel": "Maria Oliveira",
+      "ddd": "11",
+      "telefone": "987654321",
+      "idade": "35",
+      "sexo": "M",
+      "gestante": "não",
+      "escolaridade": "Ensino Superior Completo",
+      "racaCor": "Parda",
+      "nomeMae": "Ana da Silva",
+      "atividadePrincipal": "Comerciante",
+      "status": "finalizado",
+      "endereco": "Rua das Flores, 123, Tocantins, TO",
+      "doenca": {
+        "doenca": "Malária",
+        "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
+        "solicitacaoExame": "sim",
+        "dataSolicitacao": "2024-10-01",
+        "exameSolicitado": "Exame de Gota Espessa",
+        "dataProvavelExame": "2024-10-05",
+        "nomeExaminador": "Carlos Almeida",
+        "nomeMedico": "Dr. Fernando Souza",
+        "crmMedico": "CRM-SP 123456",
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "positivo"
+      },
+      "id": 10
+    },
+    {
+      "nomeCompleto": "João da Silva",
+      "nomeResponsavel": "Maria Oliveira",
+      "ddd": "11",
+      "telefone": "987654321",
+      "idade": "35",
+      "sexo": "M",
+      "gestante": "não",
+      "escolaridade": "Ensino Superior Completo",
+      "racaCor": "Parda",
+      "nomeMae": "Ana da Silva",
+      "atividadePrincipal": "Comerciante",
+      "status": "finalizado",
+      "endereco": "Rua das Flores, 123, Tocantins, TO",
+      "doenca": {
+        "doenca": "Dengue",
+        "localidadeInfeccao": "Rio Tocantins, Tocantins, TO",
+        "solicitacaoExame": "sim",
+        "dataSolicitacao": "2024-10-01",
+        "exameSolicitado": "Exame de Gota Espessa",
+        "dataProvavelExame": "2024-10-05",
+        "nomeExaminador": "Carlos Almeida",
+        "nomeMedico": "Dr. Fernando Souza",
+        "crmMedico": "CRM-SP 123456",
+        "tipoMaterial": "Sangue Venoso",
+        "resultado": "negativo"
+      },
+      "id": 11
     },
     {
       "nomeCompleto": "João da Silva",
@@ -245,7 +334,7 @@
       "status": "triagem",
       "endereco": "Rua das Flores, 123, Tocantins, TO",
       "doenca": "",
-      "id": 9
+      "id": 12
     }
   ]
 }

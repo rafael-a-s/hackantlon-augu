@@ -24,13 +24,7 @@ const ECommerce: React.FC = () => {
 
   return (
     <>
-      <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
-        <MapOne onRegionClick={handleRegionClick} /> {/* Passar função de clique */}
-        <ChartThree selectedRegion={selectedRegion} /> {/* Passar região selecionada */}
-        <ChartOne />
-      </div>
-
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3 2xl:gap-7.5 mt-3">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3 2xl:gap-7.5 mt-3">
         <CardDataStats title="Casos Positivos" total="156" rate="0.43%" levelUp>
           <svg
             className="fill-primary dark:fill-white"
@@ -97,6 +91,13 @@ const ECommerce: React.FC = () => {
         </CardDataStats>
 
       </div>
+      <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
+        <MapOne onRegionClick={handleRegionClick} /> {/* Passar função de clique */}
+        <ChartThree selectedRegion={selectedRegion} /> {/* Passar região selecionada */}
+        <ChartOne />
+      </div>
+
+      
     
     </>
   );
