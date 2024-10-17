@@ -13,7 +13,7 @@ const SelectGroupOne: React.FC = () => {
     <div className="mb-4.5">
       <label className="mb-2.5 block text-black dark:text-white">
         {" "}
-        Subject{" "}
+        Doenças{" "}
       </label>
 
       <div className="relative z-20 bg-transparent dark:bg-form-input">
@@ -28,16 +28,28 @@ const SelectGroupOne: React.FC = () => {
           }`}
         >
           <option value="" disabled className="text-body dark:text-bodydark">
-            Select your subject
+            Selecione
           </option>
-          <option value="USA" className="text-body dark:text-bodydark">
-            USA
+          <option value="chagas" className="text-body dark:text-bodydark">
+            Doenças de Chagas
           </option>
-          <option value="UK" className="text-body dark:text-bodydark">
-            UK
+          <option value="leishmaniose" className="text-body dark:text-bodydark">
+           Leishmaniose
           </option>
-          <option value="Canada" className="text-body dark:text-bodydark">
-            Canada
+          <option value="dengue" className="text-body dark:text-bodydark">
+            Dengue
+          </option>
+          <option value="zika" className="text-body dark:text-bodydark">
+            Zika
+          </option>
+          <option value="chikungunya" className="text-body dark:text-bodydark">
+            Chikungunya
+          </option>
+          <option value="malaria" className="text-body dark:text-bodydark">
+            Malária
+          </option>
+          <option value="tuberculose" className="text-body dark:text-bodydark">
+            Tuberculose
           </option>
         </select>
 
